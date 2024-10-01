@@ -48,7 +48,7 @@ nav{
   border: 3px solid #5c3f5a;
 }
 
-button{
+.searchBtn{
   background: none;
   border:none;
   cursor: pointer;
@@ -56,18 +56,18 @@ button{
   height: 50px;
 }
 
-button:hover{
+.searchBtn:hover{
   border: 2px solid #fdd5c8;
   border-radius: 50%;
 }
 
-button:active{
+.searchBtn:active{
    border: 2px solid #fdd5c8;
   border-radius: 50%;
   background: #fdd5c8;
 }
 
-input{
+#homeInput{
     background: #f8c6a0;
     border: none;
     height: 50px;
@@ -75,7 +75,39 @@ input{
     border-radius: 20px;
 }
 
-#img {
+#homeBody {
+  background-image: url("https://i.pinimg.com/originals/04/63/e7/0463e7818399e31d8d354c7e42181c6f.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 3px solid #fdd5c8;
+  padding: 20px;
+}
+
+#homeText{
+  background: lightgray;
+  opacity: 94%;
+  position: absolute;
+  padding: 20px;
+  margin-right: 60px;
+  width: 500px;
+  border: solid 4px white;
+  text-align: right;
+}
+
+#homeH{
+  text-shadow: 1px 1px 2px white, 0 0 25px orange, 0 0 5px peachpuff;
+}
+
+#homeP{
+  color: white;
+  text-shadow: 0px 0px 5px #ff8b35;
+}
+
+#aboutBody{
   background: #fdd5c8;
   height: 400px;
   display: flex;
@@ -85,29 +117,11 @@ input{
   padding: 20px;
 }
 
-#aboutBody{
-  background-image: url('https://thumbs.dreamstime.com/b/cheese-collection-wooden-board-french-cheeses-comte-beaufort-abondance-emmental-morbier-mountains-village-haute-savoie-236564743.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 400px;
-  /* display: flex;
-  justify-content: space-evenly;
-  align-items: center; */
-  border-bottom: 3px solid #fdd5c8;
-  padding: 20px;
-}
-
 #aboutText{
   margin: 15px;
   width: 700px;
-  
   margin-left: 50px;
   margin-top: 70px;
-}
-
-#aboutP{
-  text-shadow: 0px 0px 5px #5c3f5a;
-  color: white;
 }
 
 h1{
