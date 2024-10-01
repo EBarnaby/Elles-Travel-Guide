@@ -54,14 +54,14 @@ button{
 }
 
 button:hover{
-  border: 2px solid #ff8b35;
+  border: 2px solid #fdd5c8;
   border-radius: 50%;
 }
 
 button:active{
-   border: 2px solid #ff8b35;
+   border: 2px solid #fdd5c8;
   border-radius: 50%;
-  background: #ff8b35;
+  background: #fdd5c8;
 }
 
 #img {
