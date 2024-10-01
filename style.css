@@ -81,21 +81,42 @@ nav{
   background-size: cover;
   height: 800px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
   border-bottom: 3px solid #fdd5c8;
   padding: 20px;
 }
 
 #homeText{
   background: lightgray;
-  opacity: 94%;
-  position: absolute;
+  opacity: 90%;
   padding: 20px;
   margin-right: 60px;
   width: 500px;
   border: solid 4px white;
   text-align: right;
+}
+
+#bookBtn{
+  height: 100px;
+  width: 150px;
+  margin-top: 50px;
+  margin-right: 60px;
+  background-color: #ff8b35;
+  border: 3px solid #b16125;
+  border-radius: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+#bookBtn:hover{
+  border: 7px solid #fac399;
+}
+
+#bookBtn:active{
+  border: 7px solid #fac399;
+  background: #fac399;
 }
 
 #homeH{
@@ -104,7 +125,7 @@ nav{
 
 #homeP{
   color: white;
-  text-shadow: 0px 0px 5px #ff8b35;
+  text-shadow: 0px 0px 5px #612d90;
 }
 
 #aboutBody{
