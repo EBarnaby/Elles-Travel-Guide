@@ -108,6 +108,7 @@ nav{
   border-radius: 20px;
   font-size: 25px;
   color: white;
+  opacity: 90%;
 }
 
 #bookBtn:hover{
@@ -153,6 +154,11 @@ h2{
   color: #612d90;
 }
 
+h4{
+  color: #ff8b35;
+  font-size: 30px;
+}
+
 #meettheteam{
    background: #fdd5c8;
   height: 200px;
@@ -166,4 +172,47 @@ h2{
 .person{
   border: 3px solid black;
   padding: 10px;
+}
+
+#contactBody{
+  background-color: #fdd5c8;
+  height: 600px;
+  width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#contactH{
+  margin-right: 70px;
+  border: white 3px solid;
+  padding: 10px;
+}
+
+#fname, #lname, #email, #message{
+  width: 300px;
+}
+
+#message{
+  height: 200px;
+}
+
+#submit{
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  background: #ff8b35;
+  color: white;
+  font-size: 20px;
+  border: 2px solid #612d90;
+  cursor: pointer;
+}
+
+#submit:hover{
+  border: 5px solid #faf2e8;
+}
+
+#submit:active{
+  border: 5px solid #faf2e8;
+  background: #faf2e8;
 }
