@@ -21,7 +21,8 @@ nav{
 
 #cheese{
   border-radius: 50%;
-  padding: 15px;
+  margin: 15px;
+  border: 3px solid #5c3f5a;
 }
 
 #links{
@@ -32,6 +33,7 @@ nav{
   justify-content: space-between;
   padding: 10px;
   border-radius: 20px;
+  border: 3px solid #5c3f5a;
 }
 
 #searchbar{
@@ -43,6 +45,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   width: 400px;
+  border: 3px solid #5c3f5a;
 }
 
 button{
@@ -64,6 +67,14 @@ button:active{
   background: #fdd5c8;
 }
 
+input{
+    background: #f8c6a0;
+    border: none;
+    height: 50px;
+    width: 65%;
+    border-radius: 20px;
+}
+
 #img {
   background: #fdd5c8;
   height: 400px;
@@ -74,8 +85,29 @@ button:active{
   padding: 20px;
 }
 
-#text{
+#aboutBody{
+  background-image: url('https://thumbs.dreamstime.com/b/cheese-collection-wooden-board-french-cheeses-comte-beaufort-abondance-emmental-morbier-mountains-village-haute-savoie-236564743.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: center; */
+  border-bottom: 3px solid #fdd5c8;
+  padding: 20px;
+}
+
+#aboutText{
   margin: 15px;
+  width: 700px;
+  
+  margin-left: 50px;
+  margin-top: 70px;
+}
+
+#aboutP{
+  text-shadow: 0px 0px 5px #5c3f5a;
+  color: white;
 }
 
 h1{
