@@ -28,7 +28,7 @@ nav{
 #links{
   font-size: 20px;
   background: white;
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -99,8 +99,8 @@ nav{
 }
 
 #bookBtn{
-  height: 100px;
-  width: 150px;
+  height: 80px;
+  width: 200px;
   margin-top: 50px;
   margin-right: 60px;
   background-color: #ff8b35;
@@ -175,18 +175,27 @@ h4{
 }
 
 #contactBody{
-  background-color: #fdd5c8;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/0b5ca971-1eca-484f-9a84-071b23ba5126/small-towns-in-france.jpg");
+  background-repeat: no-repeat;
+  margin-left: 50px;
+  margin-top: 50px;
   height: 600px;
   width: 100%;
  display: flex;
- justify-content: center;
+ justify-content: flex-end;
  align-items: center;
+}
+
+form{
+  margin-right: 100px;
 }
 
 #contactH{
   margin-right: 70px;
   border: white 3px solid;
   padding: 10px;
+  background-color: lightgray;
+  opacity: 90%;
 }
 
 #fname, #lname, #email, #message{
