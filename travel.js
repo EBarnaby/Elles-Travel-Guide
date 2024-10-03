@@ -1,2 +1,7 @@
-fetch ("https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-JS0101EN-SkillsNetwork/travel1.json")
-console.log(countries[0].cities[0].name)
+fetch("travel.json").then(res => {
+    if(res.ok);
+    return res.json();
+    })
+    .then(data => console.log(data))
+    .catch(error => console.log("Error"))
+/*if json is not there, error!*/
