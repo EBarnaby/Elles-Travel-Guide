@@ -6,8 +6,17 @@ fetch("travel.json")
     .catch(error => console.log("Error"))
 /*if json is not there, error!*/
 
-function search() {
-console.log(search)
+function typing() {
+console.log(typing)
+}
+
+function search(){
+    console.log(search)
+
+}
+
+function cancel(){
+    console.log(cancel)
 }
 
 /*make button call function*/
