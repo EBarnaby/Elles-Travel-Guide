@@ -20,5 +20,10 @@ function cancel(){
     /*resetssssss*/
 }
 
-/*make button call function*/
-/*create child for searchbar*/
+/*create child for searchbar so you can make the beach suggestions
+cause my job is beach
+beach BEACH beaches Beach
+toLowerCase()
+same for temples and countries
+only when button is pressed
+*/
