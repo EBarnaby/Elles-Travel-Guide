@@ -4,7 +4,8 @@ fetch("travel.json")
     })
     .then(data => console.log(data))
     .catch(error => console.log("Error"))
-/*if json is not there, error!*/
+/*gets json file, 
+if file is not there, error!*/
 
 function typing() {
 console.log(typing)
@@ -12,11 +13,11 @@ console.log(typing)
 
 function search(){
     console.log(search)
-
 }
 
 function cancel(){
     console.log(cancel)
+    /*resetssssss*/
 }
 
 /*make button call function*/
