@@ -3,29 +3,27 @@ fetch("travel.json")
         if(res.ok) return res.json();
     })
     .then(data => console.log(data))
-    .catch(error => console.log("Error"))
+    .catch(error => console.log("Something's wrong..."))
 /*gets json file, 
 if file is not there, error!*/
+
+const keys = Object.keys("travel.json")
+/*gets the keys from json*/
+
+// const obj = JSON.parse(keys)
+// console.log(obj)
 
 function typing() {
 console.log(typing)
 }
 
 function search(){
-    console.log(search)
+      console.log(keys);
 }
 
 function cancel(){
     console.log(cancel)
-    /*resetssssss*/
 }
 
-/*create child for searchbar so you can make the beach suggestions
-difficult is the divs
-youre a div
-beach BEACH beaches Beach
-cause my job is beach
-toLowerCase()
-same for temples and countries
-only when button is pressed
-*/
+/*html button, get elementbyid list of options
+then link the options by returning the json*/
