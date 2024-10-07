@@ -21,8 +21,10 @@ function cancel(){
 }
 
 /*create child for searchbar so you can make the beach suggestions
-cause my job is beach
+difficult is the divs
+youre a div
 beach BEACH beaches Beach
+cause my job is beach
 toLowerCase()
 same for temples and countries
 only when button is pressed
