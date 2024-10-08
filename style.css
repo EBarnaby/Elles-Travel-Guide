@@ -107,8 +107,8 @@ nav{
   background: lightgray;
   opacity: 90%;
   border: solid 4px white;
-  /* height: 900px;
-  width: 700px; */
+  height: auto;
+  width: 700px;
   margin-left: 60px;
   margin-right: 60px;
   display: flex;
@@ -118,6 +118,10 @@ nav{
   padding: 20px;
 }
 
+#rec{
+  overflow: scroll;
+  max-height: 70vh;
+}
 
 #bookBtn{
   height: 80px;
