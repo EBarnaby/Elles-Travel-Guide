@@ -79,28 +79,47 @@ nav{
   background-size: cover;
   height: 1000px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   border-bottom: 3px solid #fdd5c8;
   padding: 20px;
+}
+
+#leftside{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #homeText{
   background: lightgray;
   opacity: 90%;
   padding: 20px;
+  margin-left: 60px;
   margin-right: 60px;
   width: 500px;
   border: solid 4px white;
-  text-align: right;
+  text-align: left;
 }
+
+#rightside{
+  background: green;
+  height: 500px;
+  width: 700px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.recommendation{
+}
+
 
 #bookBtn{
   height: 80px;
   width: 200px;
   margin-top: 50px;
-  margin-right: 60px;
+  margin-left: 60px;
   background-color: #ff8b35;
   border: 3px solid #b16125;
   border-radius: 20px;
