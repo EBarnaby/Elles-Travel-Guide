@@ -107,15 +107,15 @@ nav{
   background: lightgray;
   opacity: 90%;
   border: solid 4px white;
-  height: 900px;
-  width: 700px;
+  /* height: 900px;
+  width: 700px; */
   margin-left: 60px;
   margin-right: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column;
-  align-content: space-around; */
+  flex-direction: column;
+  padding: 20px;
 }
 
 
