@@ -1,37 +1,37 @@
 function typing() {
     console.log(typing)
-} //knows you're typing
+}
+
+function cancel() {
+    console.log(cancel)
+}
 
 function getData(data, homeInput) {
-    console.log(data[homeInput.toLowerCase()])
-    for(){
+    console.log(data[homeInput.toLowerCase()]) //logs what option you've picked
+    // for(let i = 0; i< data[homeInput.toLowerCase()].length; i++){
         
-    }
+    // }
 
-
-
-    let rec = document.getElementById("rec")
-    console.log("HERE")
-    let d1 = document.createElement("div")
-    console.log("HERE1")
-    let image = document.createElement("img")
-    console.log("HERE2")
-    image.setAttribute("width", "100px")
+    let rec = document.getElementById("rec") //gets recommendation div
+    let d1 = document.createElement("div") //creates div d1
+    d1.setAttribute("style", "background-color:white;")
+    let image = document.createElement("img") //creates image
+    image.setAttribute("width", "400px")
+    image.setAttribute("height", "300px")
     image.setAttribute("src", "https://images4.alphacoders.com/743/743533.jpg")
-    console.log("HERE3")
-    d1.appendChild(image)
-    console.log("HERE7")
-    let d2 = document.createElement("div")
-    console.log("div2222")
-    let para = document.createElement("p")
-    para.innerHTML = "Welcome to Australia"
-    let header = document.createElement("h3")
-    header.innerText = "Sydneyyyyy"
-    d2.appendChild(header)
-    d2.appendChild(para)
-    d1.appendChild(d2)
-    rec.appendChild(d1)
-} //gets data and makes input lowercase to match the json
+
+    let d2 = document.createElement("div") //creates div2
+    let header = document.createElement("h3") //creates header
+    header.innerText = "Sydney"
+    let para = document.createElement("p") //creates paragraph
+    para.innerHTML = "A vibrant city known for its iconic landmarks like<br> the Sydney Opera House and Sydney Harbour Bridge."
+
+    rec.appendChild(d1) //assigns div1 to reccomendation div
+    d1.appendChild(image) //assigns image to div1
+    d1.appendChild(d2) //assigns div2 to div1
+    d2.appendChild(header) //assigns header to div2
+    d2.appendChild(para) //assigns paragraph to div2
+}
 
 function search(homeInput) {
     fetch("travel.json")
@@ -41,11 +41,3 @@ function search(homeInput) {
         .then(data => getData(data, homeInput)) //assigns func to data and input
         .catch(error => console.log("Something's wrong..."))
 }
-
-function cancel() {
-    console.log(cancel)
-}
-
-/*link the options by returning the json*/
-
-/* create html of boxes for dataaaaaa*/
