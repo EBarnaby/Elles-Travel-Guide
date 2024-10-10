@@ -46,7 +46,7 @@ nav{
   border: 3px solid #5c3f5a;
 }
 
-.searchBtn{
+.searchBtn, .cancelBtn{
   background: none;
   border:none;
   cursor: pointer;
@@ -54,12 +54,12 @@ nav{
   height: 50px;
 }
 
-.searchBtn:hover{
+.searchBtn:hover, .cancelBtn:hover{
   border: 2px solid #fdd5c8;
   border-radius: 50%;
 }
 
-.searchBtn:active{
+.searchBtn:active, .cancelBtn:active{
    border: 2px solid #fdd5c8;
   border-radius: 50%;
   background: #fdd5c8;
@@ -116,6 +116,7 @@ nav{
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  visibility: hidden;
 }
 
 #rec{
