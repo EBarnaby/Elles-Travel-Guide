@@ -1,14 +1,18 @@
 function cancel() {
-    console.log(cancel)
-    let clearBtn =  document.getElementsByClassName("cancelBtn")
-    let input = document.getElementById("homeInput").value
-    clearBtn.addEventListener('click', () => {
-        input.forEach(input => input.value = " ")
-    })
+    document.getElementById("homeInput").value = "" //clears searchbar
+    let rec = document.getElementById("rec")
+    let oldRec = rec.childElementCount
+
+    if (rec.childElementCount){
+        for (let linda = 0; linda < oldRec; linda++){
+           rec.removeChild(rec.children[0])
+        }
+    }
+    document.getElementById("rightside").style.visibility = "hidden"
 }
 
 function style(imageUrl, name, description) {
-    let rec = document.getElementById("rec") //gets recommendation div
+    let rec = document.getElementById("rec")
 
     let d1 = document.createElement("div")
     d1.setAttribute("style", "background-color:white;")
@@ -49,6 +53,6 @@ function search(homeInput) { //whatever you type in
         .then(res => {
             if (res.ok) return res.json();
         })
-        .then(data => getData(data, homeInput)) //assigns func to data and input
+        .then(data => getData(data, homeInput), cancel()) //assigns func to data and input
         .catch(error => console.error("Something's wrong...", error))
 }
